@@ -4,7 +4,8 @@
   "description": "Oracle Database Driver for Afina Sequel",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --R spec test"
+    "test": "node test/test",
+    "doc": "documentation readme index.js --section=API"
   },
   "repository": {
     "type": "git",
