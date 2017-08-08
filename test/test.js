@@ -4,9 +4,21 @@ const Drv = require('../index'),
     path = require('path'),
     assert = require('assert')
 
+/**
+ * @type {object}
+ * @property afinaUser afinaUser
+ * @property afinaWebPassword afinaWebPassword
+ * @property afinaCompany afinaCompany
+ * @property afinaApplication afinaApplication
+ * @property afinaInterfaceLanguage afinaInterfaceLanguage
+ * @property oldPackageSession oldPackageSession
+ */
 const config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json')))
 
-
+/**
+ * Main test function
+ * @returns {Promise.<void>} noting
+ */
 const tst = async () => {
     /**
      * @type AfinaSqlDbDriver
@@ -44,9 +56,10 @@ const tst = async () => {
     assert.ok(!db.isOpened, 'Error close database')
 }
 
-try {
-    tst()
-} catch (e) {
-    console.log(e)
-    process.exit(1)
-}
+
+tst()
+    .then(() => process.exit(1))
+    .catch(e => {
+        console.log(e)
+        process.exit(1)
+    })
