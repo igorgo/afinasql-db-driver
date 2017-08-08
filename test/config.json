@@ -1,0 +1,12 @@
+{
+  "username" : "PARUSWEB",
+  "password" : "******************",
+  "connectString" : "P852ONE",
+  "schema" : "VMF",
+  "afinaUser" : "GO",
+  "afinaWebPassword" : "*************",
+  "afinaCompany" : "Организация",
+  "afinaApplication" : "Admin",
+  "afinaInterfaceLanguage" : "UKRAINIAN",
+  "oldPackageSession" : false
+}

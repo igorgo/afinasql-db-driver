@@ -1,0 +1,29 @@
+{
+  "name": "afinasql-db-driver",
+  "version": "1.0.0",
+  "description": "Oracle Database Driver for Afina Sequel",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --R spec test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorgo/afinasql-db-driver.git"
+  },
+  "keywords": [
+    "Afina",
+    "Sequel",
+    "Database",
+    "Driver"
+  ],
+  "author": "Igor Gorodetskyy <igorgo16@gmail.com>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/igorgo/afinasql-db-driver/issues"
+  },
+  "homepage": "https://github.com/igorgo/afinasql-db-driver#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "oracle12db-win64": "http://guest:guest@pmo.parus.ua/svn/oracledb-12win64/oracle12db-win64.tgz"
+  }
+}
